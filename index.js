@@ -9,6 +9,10 @@ const PORT = process.env.PORT;
 app.use(cors());
 app.use(express());
 
+app.get("/",(req,res)=>{
+    res.send("api running")
+})
+
 app.listen(PORT, () => {
     console.log(`app listen to port ${PORT}`);
   });
